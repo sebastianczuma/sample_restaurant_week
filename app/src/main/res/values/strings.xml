@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Restaurant Week</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="location_array">
+        <item>Cała Polska</item>
+        <item>Warszawa</item>
+        <item>Kraków</item>
+        <item>Trójmiasto</item>
+        <item>Wrocław</item>
+        <item>Poznań</item>
+        <item>Silesia</item>
+        <item>Lublin</item>
+        <item>Łódź</item>
+        <item>Szczeciń</item>
+        <item>Białystok</item>
+        <item>Rzeszów</item>
+        <item>Słupsk i Ustka</item>
+        <item>Warmia i Mazury</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/date"
+        android:icon="@drawable/ic_calendar"
+        android:title="Data" />
+
+    <item
+        android:id="@+id/hour"
+        android:icon="@drawable/ic_clock"
+        android:title="Godzina" />
+
+    <item
+        android:id="@+id/guests"
+        android:icon="@drawable/ic_man"
+        android:title="Goście" />
+
+    <item
+        android:id="@+id/kitchens"
+        android:icon="@drawable/ic_icon_other_filters"
+        android:title="Kuchnie" />
+
+    <item
+        android:id="@+id/tags"
+        android:icon="@drawable/ic_icon_other_filters"
+        android:title="Tagi" />
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_close_24dp"
+        android:title="Usuń filtry" />
+</menu>

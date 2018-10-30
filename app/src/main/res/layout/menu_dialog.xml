@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rr">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"
+                android:fontFamily="serif"
+                android:text="Menu A"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="1. Krem z pieczonych ziemniaków z zielonym curry, smażoną sałatką z pora, schabu i prażonym słonecznikiem
+\n2. Wolno gotowany boczek glazurowany sosem teriyaki z kolendrą, podany z musem z brokułu i fermentowanego czosnku, piklami z buraka oraz racuszkiem z kapustą kiszoną i włoską
+\n3. Wiśniowe Assiette z kruszonką pistacjową i cynamonową bezą" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/forks" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                android:paddingBottom="5dp"
+                android:text="Menu B"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="1. Krem z pieczonych ziemniaków z zielonym curry, smażoną sałatką z pora i prażonym słonecznikiem
+\n2. Kasza kus kus z cukinią, ogórkiem, imbirem kolendrą i pędami bambusa na aromatycznym curry z pieczonej marchewki i sałatką z pak choi i alg morskich
+\n3. Wiśniowe Assiette z kruszonką pistacjową i cynamonową bezą" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rr"
+        android:background="#fff"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_ok"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorAccent"
+            android:background="@android:color/transparent"
+            android:text="ok"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_reserve"
+            android:layout_toLeftOf="@id/button_ok"
+
+            android:textColor="@color/colorAccent"
+            android:background="@android:color/transparent"
+            android:text="rezerwuj"/>
+    </RelativeLayout>
+</RelativeLayout>

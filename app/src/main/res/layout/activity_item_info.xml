@@ -1,0 +1,275 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <ImageView
+        android:id="@+id/expandedImage"
+        android:layout_width="match_parent"
+        android:layout_below="@id/edit_buttons_container"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/f" />
+
+    <com.scz.restaurantweek.Custom.NoTopFadingEdgeScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="300dp"
+        android:fadingEdgeLength="50dp"
+        android:requiresFadingEdge="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:paddingTop="5dp"
+                app:srcCompat="@drawable/ic_keyboard_arrow_up_black_24dp"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:text="16 Stołów"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/forks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:src="@drawable/forks" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee">
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Rynek 16/1, Lublin"
+                    android:textColor="#000" />
+
+                <Button
+                    android:id="@+id/map"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:background="@drawable/background_login_button"
+                    android:text="Zobacz na mapie"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/kitchen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:text="Kuchnia: menu mięsne, menu wegetariańskie, polska, europejska, menu rybne, menu wegańskie, molekularna, fusion" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:gravity="center_vertical"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:text="49zł"
+                android:textAlignment="center"
+                android:textColor="#305070"
+                android:textStyle="bold"
+                android:textSize="28sp" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs_titles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabBackground="@drawable/a_or_b_selector"
+                app:tabIndicatorHeight="0dp"
+                app:tabSelectedTextColor="#000"
+                app:tabTextColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="1. Krem z pieczonych ziemniaków z zielonym curry, smażoną sałatką z pora, schabu i prażonym słonecznikiem
+\n2. Wolno gotowany boczek glazurowany sosem teriyaki z kolendrą, podany z musem z brokułu i fermentowanego czosnku, piklami z buraka oraz racuszkiem z kapustą kiszoną i włoską
+\n3. Wiśniowe Assiette z kruszonką pistacjową i cynamonową bezą" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="20dp"
+                android:text="Dostępność miejsc"
+                android:textAlignment="center"
+                android:background="#eeeeee"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:text="Dotknij dzień aby sprawdzić wolne godziny"
+                android:textAlignment="center"
+                android:background="#eeeeee" />
+
+            <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="20dp"
+                android:text="Podstawowe informacje"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textStyle="bold"
+                android:text="Rok założenia"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#000"
+                android:text="2011" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textStyle="bold"
+                android:text="Szef kuchni"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#000"
+                android:text="Piotr Kwiatosz" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textStyle="bold"
+                android:text="Architektura"
+                android:textColor="#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#000"
+                android:text="Zabytkowa kamienica Starego Miasta" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:textStyle="bold"
+                android:paddingEnd="15dp"
+                android:text="Restaurator"
+                android:textColor="#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="15dp"
+                android:textColor="#000"
+                android:text="Piotr Kwiatosz, Piotr Welman" />
+
+        </LinearLayout>
+    </com.scz.restaurantweek.Custom.NoTopFadingEdgeScrollView>
+
+    <RelativeLayout
+        android:id="@+id/edit_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#305070"
+        android:paddingBottom="5dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="5dp">
+
+
+        <ImageButton
+            android:id="@+id/goback"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
+
+        <Button
+            android:id="@+id/book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Rezerwuj"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

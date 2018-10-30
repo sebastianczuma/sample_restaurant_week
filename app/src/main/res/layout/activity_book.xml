@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/edit_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#305070"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+
+            <ImageButton
+                android:id="@+id/goback"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Rezerwacja"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restauracja"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16 Stołów"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liczba gości"/>
+
+        <Button
+            android:id="@+id/guests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goście"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data"/>
+
+        <Button
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Godzina"/>
+
+        <Button
+            android:id="@+id/hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Godzina"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_login_button"
+        android:text="Dalej"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+</RelativeLayout>
