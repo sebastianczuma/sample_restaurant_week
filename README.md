@@ -3,7 +3,7 @@
 <img src="/readme/appgif.gif" align="right" />
 
 Sample Android application design which can be used in app for restaurants.
-This app show how UI of the food ordering app could look like.
+This app shows how UI of the food ordering app could look like.
 
 Restaurant Week app does not provide any other functionality.
 However design can be used in another app.
